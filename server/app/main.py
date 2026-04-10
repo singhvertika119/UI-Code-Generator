@@ -35,7 +35,10 @@ async def generate(file: UploadFile = File(...)) -> dict:
     base64_image = base64.b64encode(image_bytes).decode("utf-8")
 
     try:
-        raw_response = await generate_code_from_image(base64_image)
+        raw_response = await generate_code_from_image(
+            base64_image=base64_image,
+            mime_type=file.content_type,
+        )
     except Exception as exc:
         raise HTTPException(status_code=500, detail=f"AI generation failed: {exc}") from exc
 
