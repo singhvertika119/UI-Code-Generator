@@ -1,3 +1,12 @@
+
+
+
+
+
+https://github.com/user-attachments/assets/9056d7cc-dd7c-457a-a76a-747b0bd75e13
+
+
+
 # UI → Code Generator
 
 Turn UI screenshots into React components with Tailwind CSS. Upload an image, call a vision model (Gemini by default), and preview the generated code live in the browser.
@@ -21,6 +30,10 @@ Turn UI screenshots into React components with Tailwind CSS. Upload an image, ca
 ├── client/          # React app (Vite)
 │   ├── src/
 │   └── package.json
+
+
+
+
 ├── server/          # FastAPI app
 │   ├── app/
 │   │   ├── main.py
